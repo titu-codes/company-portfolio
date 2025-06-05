@@ -85,9 +85,11 @@ body{
 
 
 .home .hero{
-  min-height: 75vh;
-  background: url(Images/bg3.jpg);
-  background-size: cover;
+  padding-top: 100vh;
+  min-height: 100vh;
+  background: url(images/bedroom-4.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
@@ -108,11 +110,11 @@ body{
 
 .home .hero .text2{
   font-size: 3rem;
-  width:35rem;
+  width:45rem;
   background:var(--orange);
   padding:1rem;
   text-align: center;
-  opacity: .8;
+  opacity: .7;
   margin-top: 1rem;
   color:#fff;
 }
@@ -299,6 +301,7 @@ body{
   border-radius: .5rem;
   padding:1rem 3rem;
   margin-bottom: 2rem;
+
 }
 
 .contact .form-container form input, textarea{
@@ -386,10 +389,12 @@ body{
 }
 .footer .list a:hover{
     color: orange;
+    
 }
 
-.footer .letter p{
-  font-size: 2rem;
+.footer .letter h2{
+  font-size: 4rem;
+  margin-top: 4px;
 }
 
 .footer .letter input[type="email"]{
@@ -442,11 +447,13 @@ body{
 
 /* media queries  */
 
-@media (max-width:768px){
+@media (max-width:600px){
 
   html{
     font-size: 50%;
   }
+
+ 
 
   .header .fa-bars{
     display: block;
@@ -454,7 +461,7 @@ body{
 
   .header nav{
     position: fixed;
-    top:6rem; right: -120%;
+    top:4.45rem; right: -120%;
     height:calc(100vh - 6rem);
     width:100vw;
     background: rgba(0,0,0,.5);
@@ -463,8 +470,9 @@ body{
   }
 
   .header nav ul{
+    
     height: 100%;
-    width:33rem;
+    width:30rem;
     background:#fff;
     flex-flow: column;
     justify-content: center;
@@ -495,6 +503,7 @@ body{
 
 }
 
+
 @media (max-width:400px){
   .home .hero .text1{
     font-size: 3.5rem;
@@ -502,6 +511,6 @@ body{
   }
   .home .hero .text2{
     font-size: 2.5rem;
-    width: 30rem;
+    width: 33rem;
   }
 }
